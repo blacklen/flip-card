@@ -1,0 +1,22 @@
+{
+  "name": "flip-card",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kouts/vue-modal": "5.0.0",
+    "animate.css": "^4.1.1",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/language-plugin-pug": "^2.1.6",
+    "pug": "^3.0.3",
+    "vite": "^5.4.1"
+  }
+}
