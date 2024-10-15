@@ -81,13 +81,13 @@ body {
   height: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 
-  transition: transform 1s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
 .card:hover .content {
   transform: rotateY( 180deg ) ;
-  transition: transform 0.5s;
+  transition: transform 0.2s;
 }
 
 .front,
