@@ -1,4 +1,4 @@
-const input = `date,milk,cereal
+date,milk,cereal
 2016-01-26,1000,1000
 2016-01-27,0,0
 2016-01-28,0,0
@@ -512,40 +512,4 @@ const input = `date,milk,cereal
 2017-06-19,0,0
 2017-06-20,0,0
 2017-06-21,0,0
-2017-06-22,500,0`
-
-const normalize = (input) => {
-  return input.split('\n').map((sample, index) => {
-    const data = sample.split(',');
-    return [index, +data[1], +data[2]];
-  }).slice(1);
-}
-
-const execute = (input) => {
-  const data = normalize(input);
-  const milkTracking = [];
-  let totalCereal = 0;
-
-  data.forEach(([day, milk, cereal]) => {
-    totalCereal += cereal;
-    const totalMilk = milkTracking.reduce((acc, cur) => acc + cur, 0);
-
-    if (totalCereal >= 100 && totalMilk >= 100) {
-      totalCereal -= 100;
-      const oldestMilk = milkTracking.findIndex(m => m > 0);
-      milkTracking[oldestMilk] -= 100;
-    }
-
-    if (day - 5 > 0) milkTracking[day - 5] = 0;
-
-    milkTracking[day] = milk;
-  });
-
-  const totalMilk = milkTracking.reduce((acc, cur) => acc + cur, 0);
-  const res = totalMilk + totalCereal;
-
-  console.log(res);
-  return res;
-}
-
-execute(input)
+2017-06-22,500,0

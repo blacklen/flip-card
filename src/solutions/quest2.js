@@ -19,5 +19,5 @@ const execute = (input) => {
   return res;
 }
 
-// rate: 5/10 - need to understand the requirement
+// need to understand the requirement
 execute(input);

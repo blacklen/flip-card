@@ -44,5 +44,4 @@ const execute = () => {
   return res;
 }
 
-// rate 6/10
 execute()

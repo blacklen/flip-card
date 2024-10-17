@@ -52,5 +52,4 @@ const execute = (input) => {
   return res;
 }
 
-// rate: 1/10
 execute(input);
