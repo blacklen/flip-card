@@ -14,7 +14,8 @@ Modal(
       .quest-submit
         label Answer
         input.answer(
-          :class="{'invalid': invalid}"
+          :class="{'invalid': invalid}",
+          v-on:keyup.enter="submit",
           v-model="answer",
         )
         button.submit-btn(
