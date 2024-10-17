@@ -98,7 +98,7 @@ const cards = [
     title: `Blackjack`,
     quest: `Imagine the thrill of the casino, right there in your terminal.<br><br>Magnificent.<br><br>Today, we're playing the most sedate games of not-quite-blackjack of which you could concieve. Your input is a set of decks of cards, shuffled together. Draw from this deck, in order, one card at a time. Any time you hit a total card value of 21, you win! Any time you go over 21 you lose. In either case, once a game is done, immediately start again with the next card, and repeat until there are no cards left.<br><br>It's important to note while playing you can consider aces to be 11 or 1 at any time, while 2 to 10 have their face value and Jack, Queen and King are worth 10.<br><br>An example play is below<br><div class="container bd-container-body-mono bg-light text-dark" "=""><pre>input: 3 A K 9 A 7 4 9 <br>Draw a 3: current total 3<br>Draw an ace: current total 4 or 14<br>Draw a King: current total 14 or 24<br>Draw a 9: current total 23 or 33<br>This is a loss. Start again with the next card:<br>Draw an ace: current total 1 or 11<br>Draw a 7: current total 8 or 18<br>Draw a 4: current total 12 or 22<br>Draw a 9: current total 21 or 31<br>This is a win!<br></pre></div>So for this input, you win one game. How many games do you win with the input for this challenge?<br><br>`,
     questLink: 'https://challenges.aquaq.co.uk/challenge/8',
-    input: 'https://github.com/user-attachments/files/17376717/input8.txt',
+    input: 'https://github.com/user-attachments/files/17408634/input8.txt',
     answer: '256',
     rate: '6/10',
     hint: 'Chữ cái ở vị trí đầu tiên',

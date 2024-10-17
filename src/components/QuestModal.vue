@@ -2,8 +2,8 @@
 Modal(
   name="quest-modal",
   wrapper-class="animate__animated",
-  :in-class="`animate__fadeInUp`"
-  :out-class="`animate__bounceOut`",
+  :in-class="`animate__zoomIn`"
+  :out-class="`animate__zoomOut`",
 )
   .quest-wrapper
     .quest-body
