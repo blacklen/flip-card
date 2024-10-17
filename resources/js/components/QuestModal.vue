@@ -2,13 +2,11 @@
 Modal(
   name="quest-modal",
   wrapper-class="animate__animated",
-  :in-class="`animate__fadeInUp`"
-  :out-class="`animate__bounceOut`",
 )
   .quest-wrapper
     .quest-body
       .quest-title {{ card.title }}
-      .quest-content(v-html="card.quest")
+      .quest-content(v-html="card.description")
     .quest-action
       button.input-btn(@click="getInput") Get Input
       .quest-submit
